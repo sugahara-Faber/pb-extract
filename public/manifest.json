@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Issue extract",
+  "version": "1.0.0",
+  "description": "Add a button on GitHub to copy issue template for Slack post.",
+  "minimum_chrome_version": "88",
+  "icons": {
+    "50": "icons/icon50.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://github.com/**"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*/pull/**"
+      ],
+      "js": [
+        "main.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "all_frames": true
+    }
+  ]
+}
