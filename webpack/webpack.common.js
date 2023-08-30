@@ -5,8 +5,9 @@ const srcDir = '../src/';
 
 module.exports = {
   entry: {
-    style: path.join(__dirname, srcDir + 'scss/style.scss'),
+    // style: path.join(__dirname, srcDir + 'scss/style.scss'),
     main: path.join(__dirname, srcDir + 'content.ts'),
+    copyTitle: path.join(__dirname, srcDir + 'copyTitle.ts'),
     // background: path.join(__dirname, srcDir + 'background.ts'),
   },
   output: {

@@ -22,6 +22,16 @@
       "js": [
         "main.js"
       ]
+    },
+    {
+      "matches": [
+        "https://github.com/*/*/pull/**",
+        "https://github.com/*/*/issues/**",
+        "https://github.com/orgs/*/projects/*/**"
+      ],
+      "js": [
+        "copyTitle.js"
+      ]
     }
   ]
 }
