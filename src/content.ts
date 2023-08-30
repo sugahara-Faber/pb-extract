@@ -50,10 +50,10 @@ const addButton = () => {
 
   button.addEventListener('click', () => {
     const text = `${getTitle()}
-${location.href}
 ${getLinkedIssues()
   .map(({ link }) => link)
   .join('\n')}
+${location.origin}${location.pathname}
 Implement: 
 Reviewers: 
 Schedule:
